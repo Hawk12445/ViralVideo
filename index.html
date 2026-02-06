@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Watch Video Button Link</title>
+<style>
+  body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/g.png') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .watch-video-link {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff4a4a, #cc0000);
+    border: 4px solid #999999;
+    border-radius: 40px;
+    padding: 25px 70px;
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow:
+      inset 0 2px 0 rgba(255,255,255,0.8),
+      0 8px 12px rgba(0,0,0,0.5);
+    user-select: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .watch-video-link:hover {
+    background: linear-gradient(to bottom, #ff6666, #e60000);
+  }
+
+  .watch-video-link .play-icon {
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    clip-path: polygon(25% 20%, 75% 50%, 25% 80%);
+  }
+</style>
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="container">
+  <a href="https://gst-ceo-robert-advantage.trycloudflare.com" target="_blank" rel="noopener noreferrer" class="watch-video-link">
+    WATCH VIDEO
+    <div class="play-icon"></div>
+  </a>
+</div>
+
+</body>
+</html>
